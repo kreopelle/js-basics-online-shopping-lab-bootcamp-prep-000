@@ -41,9 +41,11 @@ function viewCart() {
 
 
 function total() {
+  var total = 0
   for (var i = 0; i < cart.length-1; i++) {
     var cartItemPrice = Object.values(cart[i]);
-    
+    total+=cartItemPrice
+    return total
   }
 }
 
